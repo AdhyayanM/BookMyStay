@@ -31,7 +31,6 @@ class Room {
     }
 }
 
-// Inventory (State Holder - Read Only in this use case)
 class Inventory {
     private Map<String, Integer> availabilityMap;
 
@@ -53,7 +52,6 @@ class Inventory {
     }
 }
 
-// Search Service (Read-Only Logic)
 class SearchService {
     private Inventory inventory;
     private Map<String, Room> roomCatalog;
@@ -103,10 +101,8 @@ public class BookMyStay {
         roomCatalog.put("Suite",
                 new Room("Suite", 300.0, Arrays.asList("WiFi", "TV", "Mini Bar", "Jacuzzi")));
 
-        // Step 3: Search Service (Read-Only)
         SearchService searchService = new SearchService(inventory, roomCatalog);
 
-        // Step 4: Guest initiates search
         searchService.searchAvailableRooms();
     }
 }
