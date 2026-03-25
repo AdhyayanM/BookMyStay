@@ -114,7 +114,7 @@ class BookingProcessor implements Runnable {
     }
 }
 
-public class UseCase11ConcurrentBookingSimulation {
+public class BookMyStay {
     public static void main(String[] args) throws InterruptedException {
         RoomInventory inventory = new RoomInventory();
         BookingHistory history = new BookingHistory();
