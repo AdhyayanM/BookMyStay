@@ -72,7 +72,7 @@ class SearchService {
                 Room room = roomCatalog.get(type);
 
                 room.displayDetails();
-                System.out.println(" Available Count: " + availableCount);
+                System.out.println(" Available Count:  " + availableCount);
                 System.out.println("===========================");
             }
         }
